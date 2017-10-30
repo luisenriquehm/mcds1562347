@@ -23,7 +23,7 @@
 
     function ocultarDivEjemplo(){
 
-      alert('Pasa');
+      alert('Pasa ocltando');
 
       $('.ejemplo').hide('slow');
 
@@ -31,9 +31,7 @@
     }//Cierra ocultarDivEjemplo
 
 
-     $('.showCode').on('click', '.ejemplo', function(event) {
-        event.preventDefault();
-
+     $('#showCode').on('click', function(event) {
         alert('PASA');
 
         $('.ejemplo').show('slow');
@@ -56,7 +54,7 @@
           Ejercicios
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" id='showCode'>Mostrar código</a>
+          <a class="dropdown-item" id="showCode">Mostrar código</a>
         </div>
       </li>
     </ul>
